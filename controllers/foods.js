@@ -10,6 +10,14 @@ module.exports = {
       }
     });
   },
+  getone: (req, res, next) => {
+    let id = req.params.id;
+    Food.findOne({
+      _id: id
+    }).exec(function(err, result) {
+      res.json(result);
+    });
+  },
   create: (req, res, next) => {
     Food.create({
       name: req.body.name,
