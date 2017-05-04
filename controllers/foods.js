@@ -1,6 +1,9 @@
+//require folder models to file foods
 var Food = require('../models/foods');
 
+//export function
 module.exports = {
+  //Funtion to get all data Food
   getall: (req, res, next) => {
     Food.find().exec(function(err, result) {
       if (result) {
@@ -10,6 +13,7 @@ module.exports = {
       }
     });
   },
+  //Funtion to get one data Food
   getone: (req, res, next) => {
     let id = req.params.id;
     Food.findOne({
@@ -18,6 +22,7 @@ module.exports = {
       res.json(result);
     });
   },
+  //Funtion to create data Food
   create: (req, res, next) => {
     Food.create({
       name: req.body.name,
@@ -31,6 +36,7 @@ module.exports = {
       }
     });
   },
+  //Funtion to create data Food
   delete: (req, res, next) => {
     let id = req.params.id;
     Food.remove({
