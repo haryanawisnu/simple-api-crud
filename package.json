@@ -1,0 +1,27 @@
+{
+  "name": "simple-api-crud",
+  "version": "1.0.0",
+  "description": "REST API CRUD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haryanawisnu/simple-api-crud.git"
+  },
+  "keywords": [
+    "express",
+    "mongoose"
+  ],
+  "author": "haryana wisnu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haryanawisnu/simple-api-crud/issues"
+  },
+  "homepage": "https://github.com/haryanawisnu/simple-api-crud#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "mongoose": "^4.9.7"
+  }
+}

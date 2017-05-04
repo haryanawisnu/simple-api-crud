@@ -14,8 +14,8 @@ Rest API CRUD Express
 
   ```sh
   $ cd simple-api-crud
-  $ npm install
-  $ npm start
+  $ npm install --save nodemon
+  $ nodemon app.js
   ```
 
 ### Tech
