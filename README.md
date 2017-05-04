@@ -31,11 +31,13 @@ ses a number of open source projects to work properly:
 | Route | HTTP | Description|
 | ------ | ------ | ------ |
 | /foods | GET | Get all the foods |
+| /foods/:id | GET | Get one the foods |
 | /foods | POST | Create a foods |
 | /foods/:id | DELETE | Delete a foods |
 | /foods/:id | PUT | Update a foods with new info |
 | ------ | ------ | ------ |
 | /restaurants | GET | Get all the restaurants |
+| /restaurants/:id | GET | Get one the restaurants |
 | /restaurants | POST | Create a restaurants |
 | /restaurants/:id | DELETE | Delete a restaurants |
 | /restaurants/:id | PUT | Update a restaurants with new info |
