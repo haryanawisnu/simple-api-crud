@@ -36,7 +36,7 @@ module.exports = {
       }
     });
   },
-  //Funtion to create data Food
+  //Funtion to delete data Food
   delete: (req, res, next) => {
     let id = req.params.id;
     Food.remove({
@@ -49,6 +49,7 @@ module.exports = {
       }
     });
   },
+  //Funtion to before find and after update data Food
   update: (req, res, next) => {
     let id = req.params.id;
     Food.findOne({

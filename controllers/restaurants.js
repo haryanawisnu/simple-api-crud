@@ -1,6 +1,9 @@
+//require folder models to file Restaurant
 var Restaurant = require('../models/restaurants');
 
+//export function
 module.exports = {
+  //Funtion to get all data Restaurant
   getall: (req, res, next) => {
     Restaurant.find().exec(function(err, result) {
       if (result) {
@@ -10,6 +13,7 @@ module.exports = {
       }
     });
   },
+  //Funtion to get one data Restaurant
   getone: (req, res, next) => {
     let id = req.params.id;
     Restaurant.findOne({
@@ -18,6 +22,7 @@ module.exports = {
       res.json(result);
     });
   },
+  //Funtion to create data Restaurant
   create: (req, res, next) => {
     Restaurant.create({
       name: req.body.name,
@@ -32,6 +37,7 @@ module.exports = {
       }
     });
   },
+  //Funtion to delete data Restaurant
   delete: (req, res, next) => {
     let id = req.params.id;
     Restaurant.remove({
@@ -44,6 +50,7 @@ module.exports = {
       }
     });
   },
+  //Funtion to before find and after update data Restaurant
   update: (req, res, next) => {
     let id = req.params.id;
     Restaurant.findOne({
